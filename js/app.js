@@ -3,18 +3,23 @@ var alarmF;
 alarmoutput = document.querySelector("#fast coment");
 
 var startAlarm1 = function(){
-
+       //分数を所得
 	    var alarmminute = document.querySelector("#minute1");
-	
+	　　//秒数を所得
 		var alarmsecond = document.querySelector("#second1");
-		
+		//分数入力欄に記入が無ければ０を代入する
 		if (alarmminute="") 
   {alarmminute=0;}
+　　//分数を数値変換
     alarmminute=parseInt(alarmminute);
+    //秒数入力欄に記入が無ければ０を代入する
         if (alarmminute="") 
   {alarmsecond=0;}
+    //秒数を数値変換
     alarmsecond=parseInt(alarmsecond);
+    //残り時間を定義
       var durationtime=alarmminute*60+alarmsecond-1;
+      //残り時間がゼロになればコメントを表示、そうでなければ残り時間を表示
       if (durationtime=0)
  {alarmoutput = "予鈴"}
 　　　　　　　 else
@@ -24,13 +29,14 @@ var startAlarm1 = function(){
 };
 
 var initApp1 = function(){
+	//ボタンを定義、setIntervalで関数startAlarm1を1000ミリ秒ごとに呼び出す
 		var startButton = document.querySelector("#start1");
 		startButton.addEventListener("click", startAlarm1);
 		alarmF=setInterval(startAlarm1,1000);
 };
 
 initApp1();
-
+//この後はこれの繰り返し
 var startAlarm2 = function(){
 	    var alarmminute = document.querySelector("#minute2");
 		var alarmsecond = document.querySelector("#second2");
