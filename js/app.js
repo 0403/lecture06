@@ -3,14 +3,17 @@ var alarmF;
 alarmoutput = document.querySelector("#fast coment");
 
 var startAlarm1 = function(){
+
 	    var alarmminute = document.querySelector("#minute1");
+	
 		var alarmsecond = document.querySelector("#second1");
+		
 		if (alarmminute="") 
-  {alarmminute=0;
-    alarmminute=parseInt(alarmminute);}
+  {alarmminute=0;}
+    alarmminute=parseInt(alarmminute);
         if (alarmminute="") 
-  {alarmsecond=0;
-    alarmsecond=parseInt(alarm.second);}
+  {alarmsecond=0;}
+    alarmsecond=parseInt(alarmsecond);
       var durationtime=alarmminute*60+alarmsecond-1;
       if (durationtime=0)
  {alarmoutput = "予鈴"}
@@ -32,11 +35,11 @@ var startAlarm2 = function(){
 	    var alarmminute = document.querySelector("#minute2");
 		var alarmsecond = document.querySelector("#second2");
 		if (alarmminute="") 
-  {alarmminute=0;
-    alarmminute=parseInt(alarmminute);}
+  {alarmminute=0;}
+    alarmminute=parseInt(alarmminute);
         if (alarmminute="") 
-  {alarmsecond=0;
-    alarmsecond=parseInt(alarm.second);}
+  {alarmsecond=0;}
+    alarmsecond=parseInt(alarmsecond);
       var durationtime=alarmminute*60+alarmsecond-1;
       if (durationtime=0)
  {alarmoutput = "発表時間終了"}
@@ -58,11 +61,11 @@ var startAlarm3 = function(){
 	    var alarmminute = document.querySelector("#minute3");
 		var alarmsecond = document.querySelector("#second3");
 		if (alarmminute="") 
-  {alarmminute=0;
-    alarmminute=parseInt(alarmminute);}
+  {alarmminute=0;}
+    alarmminute=parseInt(alarmminute);
         if (alarmminute="") 
-  {alarmsecond=0;
-    alarmsecond=parseInt(alarm.second);}
+  {alarmsecond=0;}
+    alarmsecond=parseInt(alarmsecond);
       var durationtime=alarmminute*60+alarmsecond-1;
       if (durationtime=0)
  {alarmoutput = "質疑応答終了"}
